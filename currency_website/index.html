@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Chart.js for Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript File -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Currency Converter Container -->
+    <div class="container">
+        <h2>Currency Converter</h2>
+        
+        <input type="number" id="amount" placeholder="Enter amount" min="0">
+
+        <!-- Searchable Dropdown for 'From' Currency -->
+        <input type="text" id="searchFrom" class="search-box" 
+               onkeyup="filterCurrencies('searchFrom', 'fromCurrency')" 
+               placeholder="Search currency">
+        <select id="fromCurrency"></select>
+
+        <!-- Searchable Dropdown for 'To' Currency -->
+        <input type="text" id="searchTo" class="search-box" 
+               onkeyup="filterCurrencies('searchTo', 'toCurrency')" 
+               placeholder="Search currency">
+        <select id="toCurrency"></select>
+
+        <button onclick="convertCurrency()">Convert</button>
+
+        <!-- Timestamp Display -->
+        <p id="timestamp" class="timestamp"></p>
+
+        <p id="result">Converted Amount: </p>
+        
+        <!-- Restored "Last Updated" -->
+        <p id="lastUpdated" class="last-updated"></p>
+
+        <canvas id="rateChart"></canvas>
+    </div>
+
+    <!-- Redesigned Footer -->
+    <div class="footer">
+        <p class="footer-title">Human-Computer Interaction</p>
+        <p class="footer-subtitle">Group 2</p>
+
+        <div class="names-list">
+            <span>Jaderby Peñaranda</span>
+            <span>Jeric Ganancial</span>
+            <span>Alfred Estares</span>
+            <span>Agnes Osip</span>
+            <span>Justin Villanueva</span>
+            <span>Ria Jhen Boreres</span>
+            <span>RoseLyn Lianza</span>
+            <span>MJ Aguilon</span>
+        </div>
+
+        <!-- Social Media Icons (Add links if needed) -->
+        <div class="footer-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>
