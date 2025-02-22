@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 50px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.clock h2 {
+    font-size: 3em;
+    margin: 20px 0;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+.alarm-container {
+    margin-top: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #ff5e00;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff2e00;
+}
+
+#stop-btn {
+    background-color: red;
+}
+
+#stop-btn:hover {
+    background-color: darkred;
+}
