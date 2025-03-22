@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter | Group 2</title>
+
+    <!-- Font kay damon arte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+    <!-- JavaScript File -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Currency Converter</h2>
+
+        <div class="input-container">
+            <input type="number" id="amount" placeholder="Enter amount" min="0">
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="fromCurrencyInput" list="fromCurrencyList" placeholder="Search currency" class="gradient-input">
+            <datalist id="fromCurrencyList"></datalist>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="toCurrencyInput" list="toCurrencyList" placeholder="Search currency" class="gradient-input">
+            <datalist id="toCurrencyList"></datalist>
+        </div>
+
+        <button id="convertBtn">Convert</button>
+
+        <p id="result">Converted Amount: </p>
+        <p id="lastUpdated" class="last-updated"></p>
+
+        <canvas id="rateChart"></canvas>
+    </div>
+
+    <div class="footer">
+        <p class="footer-title">Human-Computer Interaction</p>
+        <p class="footer-subtitle">Group 2</p>
+    
+        <div class="names-list">
+            <span class="sky-blue-bg">Jaderby Peñaranda</span>
+            <span class="sky-blue-bg">Jeric Ganancial</span>
+            <span class="sky-blue-bg">Alfred Estares</span>
+            <span class="sky-blue-bg">Agnes Osip</span>
+            <span class="sky-blue-bg">Justin Villanueva</span>
+            <span class="sky-blue-bg">Ria Jhen Boreres</span>
+            <span class="sky-blue-bg">RoseLyn Lianza</span>
+            <span class="sky-blue-bg">MJ Aguilon</span>
+        </div>
+    </div>
+    
+
+</body>
+</html>
